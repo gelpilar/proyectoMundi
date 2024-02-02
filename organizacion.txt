@@ -1,0 +1,49 @@
+Partes: 
+
+-> App general
+	->Home
+		-> tarjeta de informacion 
+		-> tarjeta clima
+		-> buscador
+		-> boton aleatorio
+
+	->No Encontrado
+		-> tarjeta sujetido
+		-> buscador
+		-> boton aleatorio
+
+
+Procesos que deberia hacer:
+-> Hook -> llamado a apis (fetch general)
+	-> llamar api pais aleatorio (0 al 249)
+	-> poner numero aleatorio (0 al 249)
+	-> llamar api del clima segun el pais seleccionado
+	-> llamar api chat para datos segun pais
+
+
+api paises:
+name -> transalte spa
+capital
+flags
+datos curiosos:
+area 
+popilation
+continents
+
+url: llamado a todos 
+https://restcountries.com/v3.1/all/?fields=translations,capital,area,flags
+
+flags.png
+capital
+translations.spa
+area
+
+api clima:
+url llamado a la api
+https://api.openweathermap.org/data/2.5/weather?q=buenos aires&appid=e7ae586051eb4b986d35b62bf6096e01
+
+data?.main?.temp - 273.15
+
+data.weather[0].description
+https://openweathermap.org/img/wn/${data.weather[0].icon}.png
+
