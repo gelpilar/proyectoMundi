@@ -9,12 +9,12 @@ export const Home =  () => {
     const [val,setval]=useState(true)
     const cambiar = (nombre)=>
     {
+      console.log("acaa")
         setnombre(nombre)
     }
     return (
       <>
       <Tarjeta funcion={cambiar} />
-      <Clima nombre={nombre1===""? "Buenos aires" : nombre1} />
       
       </>
     )

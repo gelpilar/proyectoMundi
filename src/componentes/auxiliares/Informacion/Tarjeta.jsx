@@ -11,7 +11,7 @@ export const Tarjeta =({funcion}) => {
       nombre: "nombre Pais",
       bandera: "https://us.123rf.com/450wm/yupiramos/yupiramos1802/yupiramos180209245/95183979-planeta-tierra-mundo-globo-mapa-icono-ilustraci%C3%B3n-vectorial-dibujo-imagen.jpg",
       area:0,
-      capital: "capital"
+      capital: ""
     }
     )
     
@@ -52,6 +52,7 @@ export const Tarjeta =({funcion}) => {
             </ul>
             <p>Capital: {objetoMuestra.capital}</p>
       </span>
+      <Clima nombre={objetoMuestra.capital} />
       </>
     )
   }
