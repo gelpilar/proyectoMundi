@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { useFetch } from '../../../Hooks/useFetch'
 import { Clima } from './Clima'
+import '../../../estilos/Tarjeta.css'
 
 
 
-export const Tarjeta =({funcion}) => {
+export const Tarjeta =({num,nombre}) => {
 
     const [objetoMuestra,setObjeto]=useState(
         {
@@ -15,12 +16,11 @@ export const Tarjeta =({funcion}) => {
     }
     )
     
-  
-   
+    
       const {data,status}=  useFetch('https://restcountries.com/v3.1/all/?fields=translations,capital,area,flags')
      
 
-      const num= Math.floor(Math.random() * 251);
+     
       
     useEffect(()=>{
         if(status!==500)
@@ -32,27 +32,26 @@ export const Tarjeta =({funcion}) => {
                 capital: data[num].capital
             }
             setObjeto(nuevo)
-           
-            funcion(nuevo.capital)
         
         }else{
             console.log("errro")
         }
         
-    },[data,status])
+    },[data,status,num])
 
     
     return (
       <>
       <span className='tarjeta'>
-            <h1>{objetoMuestra.nombre}</h1>
+            <h1 className='tex'>{objetoMuestra.nombre}</h1>
             <img srcSet={objetoMuestra.bandera} alt="" srcset="" />
             <ul>
-                <li>area: {objetoMuestra.area}</li>
+                <li className='tex'>area: {objetoMuestra.area}</li>
             </ul>
-            <p>Capital: {objetoMuestra.capital}</p>
+            <p className='tex' >Capital: {objetoMuestra.capital}</p>
+            <Clima className="clima"nombre={objetoMuestra.capital} />
+
       </span>
-      <Clima nombre={objetoMuestra.capital} />
       </>
     )
   }

@@ -1,0 +1,44 @@
+.ima
+{
+    max-width:4rem ;
+    background-color: rgba(255, 254, 254, 0);
+}
+img
+{
+    max-width: 10rem;
+    background-color: rgba(255, 254, 254, 0);
+}
+.climaCuer
+{
+    background-color: rgba(250, 235, 215, 0.315);
+   width: 20rem;
+   border-radius:10%;
+   margin: 3rem;
+
+}
+span
+{
+    background-color: rgba(255, 254, 254, 0);
+}
+
+h4,h5
+{
+    background-color:rgba(255, 254, 254, 0);
+    color: rgb(247, 247, 247);
+}
+button
+{
+    width: 5rem;
+    height: 5rem;
+    margin: 2rem;
+    border-radius:10rem;
+    
+}
+
+.aleatorio
+{
+    background-color: rgb(122, 118, 118);
+    border-style: none;
+}
+
+

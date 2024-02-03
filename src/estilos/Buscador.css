@@ -1,0 +1,27 @@
+.cuerpo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 15rem;
+    height: 20rem;
+}
+
+input
+{
+    background-color: rgb(255, 254, 254);
+    border-radius: 10rem;
+    height: 3rem;
+    width: 20rem;
+    text-align: center;
+}
+form
+{
+    background-color: rgba(255, 254, 254, 0);
+}
+h2
+{
+    background-color: rgba(255, 254, 254, 0);
+    color: white;
+}
