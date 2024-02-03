@@ -28,7 +28,7 @@ export const Home =  () => {
       <section>
       <Tarjeta  num={num} nombre={nombre1}/>
       <button className="aleatorio" onClick={aleatorio}>
-        <img src={alea} alt="" srcset="" />
+        <img className="im"src={alea} alt="" srcset="" />
       </button>
       </section>
       </section>

@@ -28,8 +28,8 @@ h4,h5
 }
 button
 {
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     margin: 2rem;
     border-radius:10rem;
     
@@ -39,6 +39,11 @@ button
 {
     background-color: rgb(122, 118, 118);
     border-style: none;
+}
+
+.im
+{
+    width: 2rem;
 }
 
 

@@ -57,12 +57,12 @@ export const Clima = ({nombre}) => {
     <>
     <section className='climaCuer'>
     <span className='clima'>
-    <h4>{clima.temp}</h4>
-<h5>{clima.descripcion}</h5>
+    <h4>{clima.temp}°</h4>
+<h4>Descripcion: {clima.descripcion}</h4>
 <img  className="ima" srcset={clima.ico} alt="Weather Icon" />
 
 <button onClick={clickear}>
- <img src={r} alt="" />
+ <img className="im" src={r} alt="" />
 </button>
     </span>
     </section>
